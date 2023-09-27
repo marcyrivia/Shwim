@@ -1,0 +1,35 @@
+body{
+    background-color: #FEFEFE;
+}
+.mail,.telephone,.localisation{
+    box-shadow: 0 0 3px black;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    margin-bottom: 11px;
+}
+.icon{
+    font-size: 30px;
+    padding-right: 15px;
+}
+.textContact{
+    padding-left: 30px;
+}
+.btn{
+    background-color:#86E8DF ;
+    color: white;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.btn:hover{
+    background-color: white;
+    color: #86E8DF;
+    border: 2px solid #86E8DF;
+}

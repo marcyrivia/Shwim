@@ -7,20 +7,53 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../contact/style.css">
     <title>Document</title>
 </head>
 
 <body>
+    <!-- Carte localisation AFPA -->
+    <div class="justify-content-center">
+        <img src="../contact/img/map.png" alt="location afpa" class="center">
+    </div>
+    <!-- Espace contact -->
     <div class="contact mx-auto text-start row border row-cols-lg-2 row-cols-1">
-        <div id="adress" class="col-lg-4 mx-auto text-start">
+        <div id="adress" class="my-2 col-lg-4 mx-auto text-start">
             <address>
                 <h3>Contact Us</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is simply random text. It has roots in a piece of classical Latin literature from 45 BC, maki years old.</p>
-                <abbr title="Adresse électronique">E-mail:</abbr> Shwim@gmail.com <br>
-                <abbr title="Téléphone">Tel:</abbr> +33 1 55 55 55 55
+                <p>Contrary to popular belief, Lorem Ipsum is simply random text. It has roots in a piece of classical
+                    Latin literature from 45 BC, maki years old.</p>
+                    <div class="localisation rounded">
+                        <div class="icon float-start">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="textContact">
+                            <span>Adresse</span>
+                            <p>135 Rue du Madrillet, 76800 Saint-Étienne-du-Rouvray</p>
+                        </div>
+                    </div>
+                    <div class="mail rounded">
+                    <div class="icon float-start">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <div class="textContact">
+                        <span>E-mail</span>
+                        <p>Shwim@gmail.com</p>
+                    </div>
+                </div>
+                <div class="telephone rounded">
+                    <div class="icon float-start">
+                        <i class="bi bi-phone"></i>
+                    </div>
+                    <div class="textContact">
+                        <span>Tel</span>
+                        <p>09 72 72 39 36</p>
+                    </div>
+                </div>
             </address>
         </div>
-        <div id="commentary" class="col-lg-5 mx-auto">
+        <!-- Espace commentaire -->
+        <div id="commentary" class="my-2 col-lg-5 mx-auto">
             <h2>Leave A Comment</h2>
             <p>Our staff will call back later and answer your questions</p>
             <form class="Contact">
@@ -40,7 +73,7 @@
                     <textarea class="form-control" id="form6Example7" rows="4" placeholder="Votre message"></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-warning text-light align-start">
+                <button class="btn ">
                     SEND MESSAGE
                 </button>
             </form>
