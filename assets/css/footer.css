@@ -9,15 +9,22 @@ body
 
 .partenaires{
     width: 100%;
-    background-color: gray;
+    background-color: rgba(48,48,48,255);
     display: flex;
+    justify-content: space-around;
 }
 
 img{
-    width: 12rem;
-    background-color: red;
-    justify-content: center;
+    width: 9rem;
+    height: auto;
+    
 }
+
+.afpa-logo{
+    mix-blend-mode: plus-lighter;
+}
+
+
 
 #containerFooter
 {
