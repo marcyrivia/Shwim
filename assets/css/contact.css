@@ -14,6 +14,7 @@ body{
 .icon{
     font-size: 30px;
     padding-right: 15px;
+    color: #86E8DF;
 }
 .textContact{
     padding-left: 30px;
@@ -38,6 +39,11 @@ body{
     border: 2px solid #86E8DF;
 }
 .Contact input:hover{
+    border: 2px solid #86E8DF; /* Change border color on hover */
+    background-color: #F5F5F5; /* Change background color on hover */
+    transition: border-color 0.3s, background-color 0.3s; /* Add transition for smooth effect */
+}
+.Contact textarea:hover{
     border: 2px solid #86E8DF; /* Change border color on hover */
     background-color: #F5F5F5; /* Change background color on hover */
     transition: border-color 0.3s, background-color 0.3s; /* Add transition for smooth effect */
