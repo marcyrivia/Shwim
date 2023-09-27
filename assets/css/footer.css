@@ -60,7 +60,7 @@ body
 #credit a::after
 {
 content: "";
-background: white;
+background: #86E8DF;
 mix-blend-mode: exclusion;
 width: calc(100% + 18px);
 height: 0;
