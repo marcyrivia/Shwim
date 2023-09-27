@@ -4,6 +4,28 @@ body
     font-family: 'Lato', sans-serif;
 }
 
+
+/* PARTENAIRE */
+
+.partenaires{
+    width: 100%;
+    background-color: rgba(48,48,48,255);
+    display: flex;
+    justify-content: space-around;
+}
+
+img{
+    width: 9rem;
+    height: auto;
+    
+}
+
+.afpa-logo{
+    mix-blend-mode: plus-lighter;
+}
+
+
+
 #containerFooter
 {
     width: 100%;
@@ -61,7 +83,7 @@ body
 {
 content: "";
 background: #86E8DF;
-mix-blend-mode: exclusion;
+mix-blend-mode: hard-light;
 width: calc(100% + 18px);
 height: 0;
 position: absolute;
