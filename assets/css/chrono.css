@@ -2,46 +2,69 @@ body{
     margin: 0;
 }
 
+@font-face {
+    font-family: 'Burford';
+    src: url("../police/Burford_Rustic-InlineLight.ttf");
+}
 
-
-.promo{
-    background-color: gray;
+.affiche{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     margin: 0 5rem 0 5rem ;
-    border-radius: 8px;
+    border-radius: 15px;
     align-items: center;
     justify-content: center;
     height: 30rem;
     margin-top: 10rem;
 }
 
-@font-face {
-    font-family: 'Burford';
-    src: url("../police/Burford_Rustic-InlineLight.ttf");
+.affiche:hover{
+    box-shadow: 0 0 11px #86E8DF;
 }
 
-div{
-    text-align: center;
-    margin-right: 55rem;
-    margin-bottom: 15rem;
-    margin-top: 4rem;
-}
-h3{
-    font-family: 'Burford';
-    color: #86E8DF;
-    font-size: 3rem;
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 
 .description{
-    color: black;
-    font-weight: bold;
+    text-align: center;
+    margin-right:40rem;
 }
 
+.deal{
+    font-family: Burford;
+    color: #86E8DF;
+    font-size: 4rem;
+}
+
+.d{
+    color: black;
+}
 p{
+    font-size: 25px;
+    font-weight: bold;
     color: #86E8DF;
 }
 
+.promotion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7rem;
+    height: 20rem;
+}
 
-#demo{
-    margin-right: 2rem;
+.promo{
+    font-family: Burford;
+    color: #86E8DF;
+    font-size: 9rem;
+}
+
+script {
+
 }

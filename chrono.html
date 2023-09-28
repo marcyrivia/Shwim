@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/chrono.css">
+    <link rel="stylesheet" href="assets/scss/chrono.scss">
     <!-- extra link -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -11,13 +12,12 @@
     <title>crono</title>
 </head>
 <body>
-    <section class="promo">
-        <div>
-            <h3>Deal du week end </h3>
-            <p class="description">ne ratez pas chaque week-end du vendredi au dimanche <br>l'une de nos promotions pour nos clients fidelisés </p>
-            <h3 class="promotion"> 15% </h3>
-        </div>
-     <!-- Display the countdown timer in an element -->
+    <section class="affiche">
+        <div class="container">
+           <div class="description">
+            <h3 class="deal"> Deal du Week-end</h3>
+            <p class="d">pour nos clients fidélisés profiter <br>d'une réduction de 15% avec le code DWWM</p>
+            <!-- Display the countdown timer in an element -->
 <p id="demo"></p>
 
 <script>
@@ -40,8 +40,8 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "Days " + hours + "Hours "
-  + minutes + "Minutes " + seconds + "Seconds ";
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
   if (distance < 0) {
@@ -50,7 +50,14 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
-</div>
+           </div>
+           <div class="promotion">
+            <h3 class="promo">15%</h3>
+           </div> 
+        </div>
+  
     </section>
+    
 </body>
+<script src="assets/js/chrono.js"> </script>
 </html>
