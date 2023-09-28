@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/Images/logo.png" type="image/gif" sizes="16x16">
-    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
@@ -23,12 +22,10 @@
                         <div id="clothing"><a href="clothing.html"> CLOTHING </a></div>
                         <div id="accessories"><a href="contact.html"> CONTACT</a></div>
                     </div>
-                    <!-- SEARCH SECTION -->
                     <div id="search">
                         <i class="fas fa-search search"></i>
                         <input type="text" id="input" name="searchBox" placeholder="Search for Clothing and Accessories">
                     </div>
-                    <!-- USER SECTION (CART AND USER ICON) -->
                     <div id="user">
                         <a href="cart.html"> <i class="fas fa-shopping-cart addedToCart"><div id="badge"> 0 </div></i></a>
                     </div>
@@ -43,7 +40,10 @@
                 <div id="slidingImage"> <img src="assets/Images/img3.png" alt="image3"> </div>
                 <div id="slidingImage"> <img src="assets/Images/img4.png" alt="image4"> </div>
             </div>
-    </section>
+        </section>
+        <div class="promotion">
+            <img src="assets/Images/french-days.jpg" alt="french-days" srcset="">
+        </div>
     </main>
     <footer>
         <section>  
@@ -99,29 +99,11 @@
         </section>
         
     </footer>
-    <script>
-        function load(url, targetElementId) {
-    let req = new XMLHttpRequest();
-    req.open("GET", url, true);
 
-    req.onload = function() {
-        if (req.status >= 200 && req.status < 400) {
-            document.getElementById(targetElementId).innerHTML = req.responseText;
-        } else {
-            console.error("Error loading", url, "Status:", req.status);
-        }
-    };
-
-    req.onerror = function() {
-        console.error("Network error while trying to fetch", url);
-    };
-
-    req.send();
-}
-    </script>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/header.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
 
 
 </body>
