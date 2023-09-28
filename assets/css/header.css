@@ -4,17 +4,22 @@ body
 }
 #badge
 {
-    position: absolute;
+    /* position: absolute;
     top: 0;
+    background-color: red; /* Customize the background color */
+    /* background-color: rgb(255, 30, 30);
+    color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 14px;  */
+    position: absolute;
+    top: -12px;
+    left: 50%; /* Center the badge horizontally */
     background-color: red; /* Customize the background color */
     color: white; /* Customize the text color */
     border-radius: 50%; /* Optional: Makes it circular */
     padding: 3px 6px; /* Optional: Adjust padding as needed */
-    /* background-color: rgb(255, 30, 30);
-    color: white;
-    border-radius: 50%;
-    padding: 5px 8px;*/
-    font-size: 14px; 
+    font-size: 14px;
 
 }
 #container
@@ -34,21 +39,25 @@ body
     /* position: fixed; */
     box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149); 
 }
-#shopName 
+#shopName img{
+    width: 8rem;
+}
+
+/* #shopName 
 {
     font-size: 40px; 
     font-family: 'Lato', sans-serif;
-}
-#shopName a
+} */
+/* #shopName a
 {
     text-decoration: none;
     color: rgb(29, 29, 29);
-}
-#shopName > b
+} */
+/* #shopName > b
 {
     font-weight: 900;
     font: black;
-}
+} */
 
 #collection
 {
@@ -79,11 +88,11 @@ body
 {
     font-size: 1.5em;
     margin-right: 25px;
+    position: relative;
 }
 #user
 {
     position: relative;
-
     display: flex;
     /* float: right; */
     align-items: center;
@@ -156,12 +165,9 @@ body
     #container
     {
         display: grid;
-        grid-template-columns: 1fr 2fr 0.5fr;
+        grid-template-columns: 1fr 1.5fr 1.5fr 0.5fr;
     }
-    #search
-    {
-        display: none;
-    }
+
 }
 @media(max-width: 750px)
 {
@@ -193,6 +199,8 @@ body
     #collection
     {
         font-size: 10px;
+        display: grid;
+        grid-gap: inherit;
     }
     .userIcon
     {
@@ -201,10 +209,22 @@ body
 }
 @media(max-width: 550px)
 {
-    #container 
+    #shopName img{
+        width: 5rem;
+    }
+    #search
+    {
+        width:2em;
+    }
+    #input 
+    {
+        width: 3.5em;
+        padding: 2px 40px;
+    }
+    /* #container 
     {
         padding: 20px 25px;
-    }
+    } */
 }
 
 /* badge media */
@@ -280,7 +300,7 @@ body
         right: 87px;
     }
 }*/
-@media(max-width: 750px)
+/* @media(max-width: 750px)
 {
     #badge
     {
@@ -304,4 +324,4 @@ body
         right: 62px;
         top: 18px;
     }
-}
+} */

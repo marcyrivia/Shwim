@@ -61,6 +61,11 @@ img{
     padding-top: 30px;
     font-size: 12px;
 }
+#webFooter a{
+    text-decoration: none;
+    color: white;
+
+}
 #credit 
 {
     width: 100%;

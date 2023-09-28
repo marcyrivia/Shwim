@@ -9,23 +9,32 @@
     <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href= "assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Shwim</title>
 </head>
 <body>
-    <!-- header -->
-    <div id="1"></div>
-    <script>
-        load("header.html");
-        function load(url)
-        {
-            req = new XMLHttpRequest();
-            req.open("GET", url, false);
-            req.send(null);
-            document.getElementById(1).innerHTML = req.responseText;
-        }
-    </script>
-    <!-- header -->
+    <header>
+        <section>
+            <div id="container">
+                <div id="shopName"><a href="index.html"> <img src="assets/Images/logo.png" alt="" srcset="" ></a></div>
+                    <div id="collection">
+                        <div id="clothing"><a href="clothing.html"> CLOTHING </a></div>
+                        <div id="accessories"><a href="contact.html"> CONTACT</a></div>
+                    </div>
+                    <!-- SEARCH SECTION -->
+                    <div id="search">
+                        <i class="fas fa-search search"></i>
+                        <input type="text" id="input" name="searchBox" placeholder="Search for Clothing and Accessories">
+                    </div>
+                    <!-- USER SECTION (CART AND USER ICON) -->
+                    <div id="user">
+                        <a href="cart.html"> <i class="fas fa-shopping-cart addedToCart"><div id="badge"> 0 </div></i></a>
+                    </div>
+            </div>
+        </section>
+    </header>
     <main>
         <section>
             <div id="containerSlider">
@@ -37,9 +46,79 @@
     </section>
     </main>
     <footer>
+        <section>  
+            
+            <div class="partenaires">
+                <img  src="assets/Images/gucci-logo.png" alt="">
+                <img class="afpa-logo" src="assets/Images/afpa-logo.png" alt="">
+                <img src="assets/Images/h-m-logo-0.png" alt="">
+            </div>
 
+            <div id="containerFooter">
+                
+                <div id="webFooter">
+                    <h3 class="shwim-footer"> SHWIM </h3>
+                    <p> Vêtements Femmes </p>
+                    <p> Vêtements Femmes </p>
+                    <p> men accessories </p>
+                    <p> women accessories </p>
+                </div>
+
+                <div id="webFooter">
+                    <h3> Liens utiles </h3>
+                    <a href="index.html"><p> Accueil </p></a>
+                    <p> A propos de nous </p>
+                    <a href="contact.html"><p> Contact </p></a>
+                </div>
+
+                <div id="webFooter">
+                    <h3>    Partenaires </h3>
+                    <p> Gucci </p>
+                    <p> Afpa </p>
+                    <p> H&M </p>
+                    <p> + many more </p>
+                </div>
+
+                <div id="webFooter">
+                    <h3> Adresse </h3>
+                    <p> 135 rue du Madrillet </p>
+                    <p> 76800 </p>
+                    <p> Saint-Étienne-du-Rouvray </p>
+                    <p> France </p>
+                </div>
+
+                <nav class="reseaux">
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter-x"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-pinterest"></i>
+                </nav>
+
+            </div>
+            <div id="credit"><a href=""> Amine </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp  <a href=""> Florian </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="" target="_blank"> Shamseddin </a></div>
+        </section>
         
     </footer>
+    <script>
+        function load(url, targetElementId) {
+    let req = new XMLHttpRequest();
+    req.open("GET", url, true);
+
+    req.onload = function() {
+        if (req.status >= 200 && req.status < 400) {
+            document.getElementById(targetElementId).innerHTML = req.responseText;
+        } else {
+            console.error("Error loading", url, "Status:", req.status);
+        }
+    };
+
+    req.onerror = function() {
+        console.error("Network error while trying to fetch", url);
+    };
+
+    req.send();
+}
+    </script>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/header.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
