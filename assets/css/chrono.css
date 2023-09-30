@@ -9,6 +9,7 @@ body{
 
 .affiche{
     background-color: white;
+    background: linear-gradient(145deg, rgba(134,232,223,1) 0%, rgba(219,255,252,1) 26%, rgba(255,255,255,1) 48%);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     margin: 0 5rem 0 5rem ;
@@ -24,16 +25,17 @@ body{
 }
 
 
+
 .container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 3rem;
+    text-align: center;
 
 }
 
 .description{
-    text-align: center;
-    margin-right:40rem;
 }
 
 .deal{
@@ -50,21 +52,15 @@ p{
     font-weight: bold;
     color: #86E8DF;
 }
+ 
 
 .promotion{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 7rem;
-    height: 20rem;
+    height: 2rem;
+    
 }
 
-.promo{
-    font-family: Burford;
-    color: #86E8DF;
-    font-size: 9rem;
-}
 
-script {
-
-}
