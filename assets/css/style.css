@@ -16,10 +16,77 @@
 }
 .promotion{
     margin-top: 3rem;
+    width: 100%;
+
 }
 .promotion img{
     width: 100%;
 }
+
+
+
+
+.women-card{
+    margin: 0 auto;
+}
+
+
+
+
+.responsive-image {
+    background-image: url("../Images/img4.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* This property makes sure the background covers the whole div */
+    background-position: center center; /* Center the background image */
+        position: relative; /* Make sure position is set for overlay */
+}
+
+
+.text-overlay-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+/* Container holding the image and the text */
+
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+.card-text{
+    color: #e7ab3c;
+    font-size: 20px;
+    font-weight: 700;
+}
+.card-text span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #b2b2b2;
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
 footer{
     margin-top: 10rem;
 }
