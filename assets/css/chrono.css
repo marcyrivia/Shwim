@@ -43,13 +43,15 @@ body{
 .deal{
     font-family: Burford;
     color: #86E8DF;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .d{
     color: black;
+    font-size: 25px;
+    font-weight: bold;
 }
-p{
+#demo{
     font-size: 25px;
     font-weight: bold;
     color: #86E8DF;
